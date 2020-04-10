@@ -1,65 +1,87 @@
 @@include("partials/head.html")
 
-    <!-- Header -->
-    <header class="pt2 pb1 align--center">
-        <div class="container">
-            <p>Welcome to the homepage</p>
-            <p>of</p>
-            <h1 title="Rosario De Chiara"><img class="logo" src="/img/logo.svg" alt="Rosario De Chiara"></h1>
-        </div>
-    </header>
- 
-    <!-- Body -->
-    <main>
-        
-        <div class="container">
+<!-- Header -->
+<header class="pt2 pb1 align--center">
+    <div class="container">
+        <p>Welcome to the homepage</p>
+        <p>of</p>
+        <h1 title="Rosario De Chiara"><img class="logo" src="/img/logo.svg" alt="Rosario De Chiara"></h1>
+    </div>
+</header>
 
-            <!-- Info -->
-            <section class="grid-row grid-row--center">
+<!-- Body -->
+<main>
 
-                <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
-                    <div class="relative">
-                        <img class="info-image relative z2" src="/img/io.jpg" alt="Me">
-                        <div class="pattern pattern--left-down absolute z1"></div>
-                    </div>
+    <div class="container">
+
+        <!-- Info -->
+        <section class="grid-row grid-row--center">
+            <div class="grid-column span-half pt3 pb3 mobile-m order-1">
+                <div class="relative">
+                    <img class="info-image relative z2" src="./img/io.jpg" alt="Cabin">
+                    <div class="pattern pattern--left-down absolute z1"></div>
                 </div>
-                <div class="grid-column span-half pt3 pb3 mobile-m order-2">
-                    <h3>Hello, world!</h3>
-                    <p>
-                        I have a long lasting passion for technology. I am retroprogrammer and a retrogamer. 
-                    </p>
-                    <p>
-                        I do love distributed systems, parallel programming, in particular 
-                        I define myself a scalability evangelist. 
-                    </p>
-                </div>
-
-            </section>
-
-        </div>
-
-        <!-- Contact -->
-        <section class="bg--secondary-color pt3 pb1">
-            <div class="container">
-                <div class="mb2 align--center">
-                    <h3 class="mb1">Contact me</h3>
-                    <p>I do reply to emails</p>
-
-                    <ul class="no-bullets list--inline mt1">
-                        <li class="mr1"><a href="https://www.linkedin.com/in/rosdec" class="link"><img class="icon" src="/img/linkedin.svg" alt="Linkedin"></a></li>
-                        <li class="mr1"><a href="https://www.facebook.com/rosdec" class="link"><img class="icon" src="/img/facebook.svg" alt="Facebook"></a></li>
-                        <li class="mr1"><a href="https://www.twitter.com/rosdec" class="link"><img class="icon" src="/img/twitter.svg" alt="Twitter"></a></li>
-                        <li class="mr1"><a href="https://www.instagram.com/rosdec" class="link"><img class="icon" src="/img/instagram.svg" alt="Instagram"></a></li>
-                        <li class="mr1"><a href="skype:rosdec?call" class="link"><img class="icon" src="/img/skype.svg" alt="Skype"></a></li>
-                        <li class="mr1"><a href="mailto:rosario@dechiara.eu" class="link"><img class="icon" src="/img/mail.svg" alt="Mail"></a></li>
-                        <li class="mr1"><a href="https://medium.com/@rosdec"><img class="icon" src="/img/medium.svg" alt="Medium"></a></li>
-               
-                    </ul>
+            </div>
+            <div class="grid-column span-half pt3 pb3 mobile-m order-2">
+                <h3>Hello, world!</h3>
+                <p>
+                    I have a long lasting passion for technology. I am retroprogrammer and a retrogamer.
+                    <br />
+                    I do love distributed systems, parallel programming, in particular I define myself a scalability
+                    evangelist.
+                </p>
+            </div>
+        </section>
+        <section class="grid-row grid-row--center">
+            <div class="grid-column span-half pt3 pb3 mobile-m order-2">
+                <h3>Hello, world!</h3>
+                <p>
+                    Check out my small <a href="https://ccl.northwestern.edu/netlogo/">Netlogo</a> Agent Based Simulation.
+                    <br />
+                    Will the total lockdown work to contain the virus? How a partial lockdown handle the infection spreading?
+                    Check your hyphotesis with this <a href="./abm-covid.html">toy-simulation</a>!
+                </p>
+            </div>
+            <div class="grid-column span-half pt3 pb3 mobile-m order-1">
+                <div class="relative">
+                    <a href="./abm-covid.html">
+                    <img class="info-image relative z2" src="./img/virus.png" alt="Cabin">
+                    <div class="pattern pattern--left-down absolute z1"></div>
+                    </a>                        
                 </div>
             </div>
         </section>
-        
-    </main>
+    </div>
+
+    <!-- Contact -->
+    <section class="bg--secondary-color pt3 pb1">
+        <div class="container">
+            <div class="mb2 align--center">
+                <h3 class="mb1">Contact me</h3>
+                <p>I do reply to emails</p>
+
+                <ul class="no-bullets list--inline mt1">
+                    <li class="mr1"><a href="https://www.linkedin.com/in/rosdec" class="link"><img class="icon"
+                                src="/img/linkedin.svg" alt="Linkedin"></a></li>
+                    <li class="mr1"><a href="https://www.facebook.com/rosdec" class="link"><img class="icon"
+                                src="/img/facebook.svg" alt="Facebook"></a></li>
+                    <li class="mr1"><a href="https://www.twitter.com/rosdec" class="link"><img class="icon"
+                                src="/img/twitter.svg" alt="Twitter"></a></li>
+                    <li class="mr1"><a href="https://www.instagram.com/rosdec" class="link"><img class="icon"
+                                src="/img/instagram.svg" alt="Instagram"></a></li>
+                    <li class="mr1"><a href="skype:rosdec?call" class="link"><img class="icon" src="/img/skype.svg"
+                                alt="Skype"></a></li>
+                    <li class="mr1"><a href="mailto:rosario@dechiara.eu" class="link"><img class="icon"
+                                src="/img/mail.svg" alt="Mail"></a></li>
+                    <li class="mr1"><a href="https://medium.com/@rosdec"><img class="icon" src="/img/medium.svg"
+                                alt="Medium"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 
 @@include("partials/foot.html")
