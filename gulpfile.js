@@ -15,15 +15,10 @@ var gulp                    = require("gulp"),
 
     // JS plugins
     concat                  = require("gulp-concat"),
-    uglify                  = require("gulp-uglify"),
-
-    // Image plugin
-    imagemin                = require("gulp-imagemin"),
 
     // General plugins
     gutil                   = require("gulp-util"),
     plumber                 = require("gulp-plumber"),
-    size                    = require("gulp-size"),
     watch                   = require("gulp-watch"),
     browserSync             = require("browser-sync"),
     reload                  = browserSync.reload;
@@ -86,8 +81,6 @@ gulp.task("css", function() {
         .pipe(cssmin())
         // Rename the file
         .pipe(rename("production.css"))
-        // Show sizes of minified CSS files
-        .pipe(size({ showFiles: true }))
         // Where to store the finalized CSS
         .pipe(gulp.dest("./css"));
 });
@@ -108,14 +101,12 @@ gulp.task("images", function() {
     return gulp.src("src/src/img/**/*.+(png|jpeg|jpg|gif|svg)")
         // Prevent gulp.watch from crashing
         .pipe(plumber(onError))
-        // Minify the images
-        .pipe(imagemin())
         // Where to store the finalized images
         .pipe(gulp.dest("./img"));
 });
 
 // Use default task to launch BrowserSync and watch all files
-gulp.task("default", ["browser-sync"], function () {
+gulp.task("default", gulp.series("browser-sync", function () {
     // All browsers reload after tasks are complete
     // Watch HTML files
     watch("src/src/html/**/*", function () {
@@ -133,4 +124,4 @@ gulp.task("default", ["browser-sync"], function () {
     watch("src/src/src/img/**/*.+(png|jpeg|jpg|gif|svg)", function () {
         gulp.start("images", reload);
     });
-});
+}));
