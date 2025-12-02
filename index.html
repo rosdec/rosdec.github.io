@@ -16,7 +16,7 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header style="position: static;">
       <h1>Rosario De Chiara</h1>
       <img src="/io.jpg" alt="It's me!" />
       <ul>
@@ -36,18 +36,11 @@
       <p>I love writing of technology related topics: you can read my <a href="https://rosdec.medium.com/"
           target="_blank">Medium articles</a> and, most importantly, my <a
           href="https://blog.logrocket.com/author/rosariodechiara/" target="_blank">Logrocket Blog posts</a>.</p>
-      <p><img src="https://github-readme-stats.vercel.app/api?username=rosdec&hide=contribs,prs" /></p>
+
       <p>I used to work as Post-doc at <a href="http://www.isislab.it" target="_blank">ISISLab</a> at <a
           href="http://www.unisa.it" target="_blank">Università degli Studi di Salerno</a>, also I used to publish way
         more than now;
         following a list of my publications.</p>
-
-      <h2>My publications</h2>
-      <p><iframe
-          src="https://docs.google.com/spreadsheets/d/1nzH-YRtDvAZ78ScHSQlTIqPIOdNqA8VZTFp1EVE41HA/gviz/tq?tqx=out:html&tq&"
-          style="border: 0ch; width: 100%;"></iframe>
-
-      </p>
 
       <h2>My links</h2>
 
@@ -62,12 +55,17 @@
       </ul>
 
     </section>
-    <footer>
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
-      </p>
-    </footer>
+    
+    <section style="width: 100%;">
+      <h2>My publications</h2>
+      <div id="publications-container">
+        <p>Loading publications...</p>
+      </div>
+    </section>
+
   </div>
   <script src="js/scale.fix.js"></script>
+  <script src="js/publications.js"></script>
 </body>
 
 </html>

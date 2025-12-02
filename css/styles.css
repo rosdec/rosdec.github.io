@@ -107,6 +107,7 @@ header {
   width:270px;
   float:left;
   position:fixed;
+  margin-bottom: 5px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -173,6 +174,7 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
+  margin-top: 10px;
 }
 
 small {
@@ -267,4 +269,82 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* Publications table styling */
+#publications-container {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.publications-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+.publications-table thead tr {
+  background-color: #39c;
+  color: #fff;
+  text-align: left;
+}
+
+.publications-table thead th {
+  padding: 12px 10px;
+  font-weight: 500;
+  border-bottom: 2px solid #069;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  background-color: #39c;
+  word-wrap: break-word;
+}
+
+.publications-table thead th:nth-child(1),
+.publications-table tbody td:nth-child(1) {
+  width: 5%;
+}
+
+.publications-table thead th:nth-child(2),
+.publications-table tbody td:nth-child(2) {
+  width: 5%;
+}
+
+.publications-table thead th:nth-child(3),
+.publications-table tbody td:nth-child(3) {
+  width: 80%;
+}
+
+.publications-table thead th:nth-child(4),
+.publications-table tbody td:nth-child(4) {
+  width: 5%;
+}
+
+.publications-table thead th:nth-child(5),
+.publications-table tbody td:nth-child(5) {
+  width: 5%;
+}
+
+.publications-table tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.publications-table tbody tr:nth-of-type(even) {
+  background-color: #f8f8f8;
+}
+
+.publications-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.publications-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
