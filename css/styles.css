@@ -278,7 +278,7 @@ footer {
 }
 
 .publications-table thead tr {
-  background-color: #39c;
+  background-color: #f4f4f4;
   color: #fff;
   text-align: left;
 }
@@ -286,11 +286,10 @@ footer {
 .publications-table thead th {
   padding: 12px 10px;
   font-weight: 500;
-  border-bottom: 2px solid #069;
-  color: #fff;
+  color: #595959;
   position: sticky;
   top: 0;
-  background-color: #39c;
+  background-color: #f4f4f4;
   word-wrap: break-word;
 }
 
