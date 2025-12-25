@@ -244,11 +244,20 @@ footer {
   }
 
   header ul {
-    width:99%;
+    width:100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   header li, header ul li + li + li {
-    width:33%;
+    width: auto;
+  }
+
+  #publications-container {
+    padding: 15px;
+  }
+
+  .publications-list li {
+    padding: 12px;
   }
 }
 
@@ -260,79 +269,49 @@ footer {
   }
 }
 
-/* Publications table styling */
+/* Publications list styling */
 #publications-container {
   max-height: 500px;
   overflow-y: auto;
-  overflow-x: hidden;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   margin: 20px 0;
-}
-
-.publications-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-  table-layout: fixed;
-}
-
-.publications-table thead tr {
-  background-color: #f4f4f4;
-  color: #fff;
-  text-align: left;
-}
-
-.publications-table thead th {
-  padding: 12px 10px;
-  font-weight: 500;
-  color: #595959;
-  position: sticky;
-  top: 0;
-  background-color: #f4f4f4;
-  word-wrap: break-word;
-}
-
-.publications-table thead th:nth-child(1),
-.publications-table tbody td:nth-child(1) {
-  width: 5%;
-}
-
-.publications-table thead th:nth-child(2),
-.publications-table tbody td:nth-child(2) {
-  width: 5%;
-}
-
-.publications-table thead th:nth-child(3),
-.publications-table tbody td:nth-child(3) {
-  width: 80%;
-}
-
-.publications-table thead th:nth-child(4),
-.publications-table tbody td:nth-child(4) {
-  width: 5%;
-}
-
-.publications-table thead th:nth-child(5),
-.publications-table tbody td:nth-child(5) {
-  width: 5%;
-}
-
-.publications-table tbody tr {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.publications-table tbody tr:nth-of-type(even) {
+  padding: 20px;
   background-color: #f8f8f8;
 }
 
-.publications-table tbody tr:hover {
+.publications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publications-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  line-height: 1.6;
+  transition: background-color 0.2s ease;
+}
+
+.publications-list li:hover {
   background-color: #f0f0f0;
 }
 
-.publications-table tbody td {
-  padding: 10px;
-  border-bottom: 1px solid #e5e5e5;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+.publications-list li:last-child {
+  margin-bottom: 0;
+}
+
+.doi-link {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #39c;
+  white-space: nowrap;
+}
+
+.doi-link:hover {
+  color: #069;
 }
